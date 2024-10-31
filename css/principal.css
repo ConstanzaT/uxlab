@@ -2,12 +2,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Merriweather', serif;
+
 }
 body {
     background: #F7F9FC;
     color: #333;
     overflow-x: hidden;
+
 }
 
 /* Navbar */
@@ -124,7 +126,7 @@ color: #ff6600;
 
 .cta-button-secondary {
     display: inline-block;
-    background-color: #333;
+    background-color: rgb(36, 36, 36);
     color: white;
     padding: 15px 30px;
     font-size: 1.2rem;
@@ -132,6 +134,7 @@ color: #ff6600;
     border-radius: 25px;
     margin-top: 50px;
     transition: background-color 0.3s;
+    box-shadow: 5px 5px 50px rgba(255, 255, 255, 0.5); 
 }
 
 .cta-button-secondary:hover {
@@ -471,7 +474,7 @@ text-align: left; /* Alineación a la izquierda */
 /* Degradado en secciones */
 
 #nuestro-proceso {
-background: linear-gradient(to right, #ffffff, #c4e7e7, #fef9ff, #ffffff);
+    background: #f7e6ff;
 
 }
 /* Cambia la clase .service-card */
@@ -575,7 +578,7 @@ margin: 5px; /* Reducir margen en pantallas pequeñas */
 background-color:#ccc;
 }
 #section5{
-background: linear-gradient(to right, #c2d9ff, #ead6ff, #ffffff); /* Degradado de azul claro a violeta suave y blanco */}
+    background: linear-gradient(135deg, #A85D7E, #C89EAD, #EDEDED, #B4A6B0, #634D6E, #422532); /* Degradado de azul claro a violeta suave y blanco */}
 
 .whatsapp-btn {
 position: fixed;
