@@ -45,7 +45,7 @@
         💬
     </a>
     <div id="hero">
-        <video autoplay muted loop class="hero-video">
+        <video autoplay muted loop class="hero-video" >
             <source src="assets/video.mp4" type="video/mp4">
             
         </video>
@@ -270,12 +270,40 @@
     </footer>
 
     <script>
+        
         const menuToggle = document.getElementById('menu-toggle');
         const menu = document.getElementById('menu');
 
         menuToggle.addEventListener('click', () => {
             menu.classList.toggle('hidden');
         });
+
+// Selecciona el video y define las funciones de animación
+const video = document.querySelector('.hero-video');
+
+// Escucha el evento cuando el video termina
+video.addEventListener('ended', () => {
+    // Agrega la clase de difusión para que el video se desvanezca
+    video.classList.add('fade-out');
+    
+    // Espera un segundo antes de reiniciar y hacer aparecer de nuevo
+    setTimeout(() => {
+        video.classList.remove('fade-out'); // Remueve fade-out
+        video.currentTime = 0; // Reinicia el video al inicio
+        video.play(); // Reproduce el video de nuevo
+        video.classList.add('fade-in'); // Agrega la clase fade-in para el efecto de entrada
+    }, 1000); // Tiempo en ms, igual al de la animación
+});
+
+// Limpia la clase de fade-in después de que la animación de entrada termine
+video.addEventListener('play', () => {
+    video.classList.remove('fade-in');
+});
+
+
+
+
     </script>
+ 
 </body>
 </html>
