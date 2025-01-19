@@ -1593,3 +1593,6 @@ nav {
             font-size: 1.2rem;
         }
     }
+    .card-button{
+        margin-bottom:30px;
+    }
