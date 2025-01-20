@@ -54,9 +54,7 @@ color: #ff6600;
 .menu {
     display: flex;
 }
-.menu.hidden {
-    display: none;
-}
+
 /* Secciones */
 .section {
     padding: 80px 20px;
@@ -922,21 +920,7 @@ nav {
         margin: 0 10px;
     }
     /* Responsive Styles */
-    @media (max-width: 768px) {
-        .menu {
-            display: none;
-            flex-direction: column;
-            position: absolute;
-            top: 60px;
-            right: 0;
-            background: white;
-            width: 200px;
-            border: 1px solid #ccc;
-        }
-        .menu-toggle {
-            display: block;
-        }
-    }
+
     #planes {
     background: #f7f9fc;
     padding: 50px 20px;
@@ -1407,21 +1391,11 @@ nav {
     }
     
     @media (max-width: 768px) {
-        .menu {
-            display: none;
-        }
-    
-        .menu-toggle {
-            display: block;
-        }
-    
+
         .card {
             width: 100%;
         }
-    
-        nav a {
-            font-size: 0.9rem;
-        }
+ 
     }
     
     @media (max-width: 576px) {
@@ -1437,10 +1411,7 @@ nav {
             flex-direction: column;
             align-items: flex-start;
         }
-    
-        .menu-toggle {
-            margin-bottom: 10px;
-        }
+ 
     
         footer {
             font-size: 0.9rem;
@@ -1469,14 +1440,7 @@ nav {
     }
     
     @media (max-width: 768px) {
-        .menu {
-            display: none;
-        }
-    
-        .menu-toggle {
-            display: block;
-        }
-    
+
         .card {
             width: 100%;
         }
@@ -1485,34 +1449,7 @@ nav {
             font-size: 0.9rem;
         }
     }
-    
-    @media (max-width: 576px) {
-        #hero h1 {
-            font-size: 2rem;
-        }
-    
-        #hero p {
-            font-size: 0.9rem;
-        }
-    
-        nav {
-            flex-direction: column;
-            align-items: flex-start;
-        }
-    
-        .menu-toggle {
-            margin-bottom: 10px;
-        }
-    
-        footer {
-            font-size: 0.9rem;
-        }
-    
-        .card-container {
-            flex-direction: column;
-            align-items: center;
-        }
-    }
+
     
     /* Responsiveness for Plans Section */
     @media (max-width: 1200px) {
@@ -1869,13 +1806,3 @@ nav {
     margin-bottom: 20px;
 }
 
-/* Responsive Styles */
-@media screen and (max-width: 768px) {
-    .menu {
-        display: none;
-    }
-
-    .menu-toggle {
-        display: block;
-    }
-}
