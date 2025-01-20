@@ -486,10 +486,11 @@ box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 color: #ff6600;
 }
 #nuestro-proceso {
-background: linear-gradient(to right, #a3e1e2, #d1a6e0, #ffffff);
+background-color: #f2f2f2;
 padding: 50px 20px;
 border-radius: 10px;
 box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
 }
 .process-container {
 position: relative;
@@ -512,12 +513,7 @@ margin-right: 20px; /* Espacio entre número y texto */
 flex: 1; /* Ocupa el espacio restante */
 text-align: left; /* Alineación a la izquierda */
 }
-/* Degradado en secciones */
 
-#nuestro-proceso {
-    background: #f7e6ff;
-
-}
 /* Cambia la clase .service-card */
 .service-card {
 background: transparent; /* Elimina el fondo */
@@ -619,7 +615,7 @@ margin: 5px; /* Reducir margen en pantallas pequeñas */
 background-color:#ccc;
 }
 #section5{
-    background: linear-gradient(135deg, #A85D7E, #C89EAD, #EDEDED, #B4A6B0, #634D6E, #422532); /* Degradado de azul claro a violeta suave y blanco */}
+    background-color: rgb(221, 163, 213); /* Degradado de azul claro a violeta suave y blanco */}
 
 .whatsapp-btn {
 position: fixed;
@@ -1103,7 +1099,7 @@ nav {
     color: #ff6600;
     }
     #nuestro-proceso {
-    background: none(to right, #a3e1e2, #d1a6e0, #ffffff);
+    
     padding: 50px 20px;
     border-radius: 10px;
     : 0px 2px 8px rgb(0, 0, 0, 0.1);
@@ -1129,12 +1125,8 @@ nav {
     flex: 1; /* Ocupa el espacio restante */
     text-align: left; /* Alineación a la izquierda */
     }
-    /* Degradado en secciones */
+  
     
-    #nuestro-proceso {
-        background: #f7e6ff;
-    
-    }
     /* Cambia la clase .service-card */
     .service-card {
     background: transparent; /* Elimina el fondo */
