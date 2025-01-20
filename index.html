@@ -23,6 +23,28 @@
       }
     }
     </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+          const menuToggle = document.getElementById("menu-toggle");
+          const menuModal = document.getElementById("menu-modal");
+          const closeModal = document.getElementById("close-modal");
+      
+          menuToggle.addEventListener("click", () => {
+              menuModal.classList.toggle("show");
+          });
+      
+          closeModal.addEventListener("click", () => {
+              menuModal.classList.remove("show");
+          });
+      
+          menuModal.addEventListener("click", (e) => {
+              if (e.target === menuModal) {
+                  menuModal.classList.remove("show");
+              }
+          });
+      });
+      
+      </script>
 <body>
 
 <!-- Aviso de promoción -->
@@ -34,18 +56,26 @@
 
 
     <!-- Navbar -->
-    <nav>
-        <div class="logo">
-            <img src="assets/logo.png" alt="Logo" />
-        </div>
-        <div class="menu-toggle" id="menu-toggle">☰</div>
-        <div class="menu" id="menu">
-            <a href="index.html">Inicio</a>
-            <a href="quehacemos.html">¿Qué hacemos?</a>
-            <a href="sobre_nosotros.html">Equipo</a>
-        </div>
-    </nav>
-    
+<nav>
+    <div class="logo">
+        <img src="assets/logo.png" alt="Logo" />
+    </div>
+    <div class="menu-toggle" id="menu-toggle">☰</div>
+    <div class="menu" id="menu">
+        <a href="index.html">Inicio</a>
+        <a href="quehacemos.html">¿Qué hacemos?</a>
+        <a href="sobre_nosotros.html">Equipo</a>
+    </div>
+</nav>
+<div class="menu-modal" id="menu-modal">
+    <div class="menu-content">
+        <span class="close-modal" id="close-modal">&times;</span>
+        <a href="index.html">Inicio</a>
+        <a href="quehacemos.html">¿Qué hacemos?</a>
+        <a href="sobre_nosotros.html">Equipo</a>
+    </div>
+</div>
+
     
 
     <!-- Botón de WhatsApp -->
@@ -467,12 +497,7 @@ function toggleDetails(id) {
 
     <script>
         
-        const menuToggle = document.getElementById('menu-toggle');
-        const menu = document.getElementById('menu');
-
-        menuToggle.addEventListener('click', () => {
-            menu.classList.toggle('hidden');
-        });
+   
 
 // Selecciona el video y define las funciones de animación
 const video = document.querySelector('.hero-video');
@@ -500,6 +525,19 @@ video.addEventListener('play', () => {
 
 
     </script>
- 
+ <script>
+// Declaración previa de menuToggle
+const menuToggle = document.getElementById("menu-toggle");
+const menuModal = document.getElementById("menu-modal");
+
+// Asegúrate de no sobreescribir funcionalidades existentes
+if (menuToggle && menuModal) {
+    menuToggle.addEventListener("click", () => {
+        menuModal.classList.toggle("active");
+    });
+}
+
+
+ </script>
 </body>
 </html>
